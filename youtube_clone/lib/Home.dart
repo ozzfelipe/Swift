@@ -3,6 +3,7 @@ import 'package:youtube_clone/telas/Biblioteca.dart';
 import 'package:youtube_clone/telas/EmAlta.dart';
 import 'package:youtube_clone/telas/Inicio.dart';
 import 'package:youtube_clone/telas/Inscricoes.dart';
+import 'package:youtube_clone/helper/Api.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,6 +12,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   var _indiceAtual = 0;
+
+  Api api = Api();
 
   List<Widget> _telas = [
     Inicio(),
