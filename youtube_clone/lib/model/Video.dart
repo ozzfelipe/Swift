@@ -1,17 +1,25 @@
-
+import 'package:flutter/material.dart';
 
 class Video {
-
-  String id, titulo, descricao,imagem, canal;
+  String id, titulo, descricao, imagem, canal;
 
   Video({this.id, this.titulo, this.descricao, this.imagem, this.canal});
 
+/*
   static converterJson(Map<String, dynamic> json){
-    return Video();
-  }
+    return Video(
+      id: json['id']['videoId'],
+      titulo: json['snippet']['title'],
+      imagem: json['snippet']['thumbnails']['high']['url'],
+      canal: json['snippet']['channelId'],
+    );
+  }*/
 
-  static Video.fromJson(Map<String, dynamic> json){
-    return Video();
+  factory Video.fromJson(Map<String, dynamic> json) {
+    return Video(
+        id: json['id']['videoId'],
+        titulo: json['snippet']['title'],
+        imagem: json['snippet']['thumbnails']['high']['url'],
+        canal: json['snippet']['channelId']);
   }
-
 }

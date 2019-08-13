@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -30,10 +31,15 @@ class Api {
       List<Video> videos = dadosJson['items'].map<Video>(
           (map){
             return Video.fromJson(map);
+//          return Video.converterJson(map);
           }
-      );
-/*
+      ).toList();
 
+      for (var video in videos){
+        print('Resultado: ' + video.titulo);
+      }
+
+      /*
       for( var video in dadosJson['items']){
       print('Resultado ' + video.toString());
       }
