@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Documentos\\ProjetosCompletos\\Projetos_Flutter\\youtube_clone\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "C:\\Users\\felipe.santos\\Documents\\Projetos_Completos\\Projetos_Flutter\\youtube_clone\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Felipe\\.gradle\\caches\\transforms-2\\files-2.1\\9ed985f5e9897bee7d11ab1bf5b07332\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\felipe.santos\\.gradle\\caches\\transforms-2\\files-2.1\\b8bb66f53e836b3fc10d12469e8d5beb\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
