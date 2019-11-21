@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatzappflutter/Home.dart';
+import 'package:whatzappflutter/RouteGenerator.dart';
 import 'package:whatzappflutter/model/Usuario.dart';
 
 class Cadastro extends StatefulWidget {
@@ -126,7 +127,7 @@ class _CadastroState extends State<Cadastro> {
 
   _abrirTelaHome(){
 
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
+    Navigator.pushNamedAndRemoveUntil(context, RouteGenerator.ROTA_HOME, (_)=>false);
 
   }
 

@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:whatzappflutter/Login.dart';
+import 'package:whatzappflutter/RouteGenerator.dart';
 import 'package:whatzappflutter/telas/AbaContatos.dart';
 import 'package:whatzappflutter/telas/AbaConversas.dart';
 
@@ -9,11 +11,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
+  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   String _emailUsuario = '';
   TabController _tabController;
-  List<String> itensMenus = [
-    ''
-  ];
+  List<String> itensMenus = ['Configuraçãoes', 'Deslogar'];
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +32,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               ]),
           actions: <Widget>[
             PopupMenuButton<String>(
-              onCanceled: _escolhaMenuItem(),
-              itemBuilder: (context){
-
+              onSelected: _escolhaMenuItem,
+              itemBuilder: (context) {
+                return itensMenus.map((String item) {
+                  return PopupMenuItem<String>(
+                    value: item,
+                    child: Text(item),
+                  );
+                }).toList();
               },
             )
           ],
@@ -44,8 +50,21 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         ]));
   }
 
-  _escolhaMenuItem(String itemEscolhido){
-    print('item escolhido:'+ itemEscolhido);
+  _deslogarUsuario()async{
+    await firebaseAuth.signOut();
+    Navigator.pushReplacementNamed(
+        context, RouteGenerator.ROTA_LOGIN);
+  }
+
+  _escolhaMenuItem(String itemEscolhido) {
+    switch (itemEscolhido) {
+      case 'Configuraçãoes':
+        Navigator.pushNamed(context, RouteGenerator.ROTA_CONFIGURACOES);
+        break;
+      case 'Deslogar':
+        _deslogarUsuario();
+        break;
+    }
   }
 
   Future _recuperarEmail() async {

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatzappflutter/Cadastro.dart';
 import 'package:whatzappflutter/Cadastro.dart';
+import 'package:whatzappflutter/RouteGenerator.dart';
 
 import 'Home.dart';
 import 'model/Usuario.dart';
@@ -93,8 +94,7 @@ class _LoginState extends State<Login> {
                 ),
                 Center(
                   child: GestureDetector(
-                    onTap: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Cadastro())),
+                    onTap: () => Navigator.pushNamed(context, RouteGenerator.ROTA_CADASTRO),
                     child: Text(
                       'Não tem conta? cadastr-se!',
                       style: TextStyle(color: Colors.white),
@@ -120,8 +120,7 @@ class _LoginState extends State<Login> {
   }
 
   _abrirTelaHome() {
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Home()));
+    Navigator.pushReplacementNamed(context, RouteGenerator.ROTA_HOME);
   }
 
   _loginUsuario(Usuario usuario) {
