@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Fri Sep 27 17:41:31 BRT 2019
+#Thu Nov 21 21:32:05 BRST 2019
 base.0=E\:\\Documentos\\ProjetosCompletos\\Projetos_Flutter\\youtube_clone\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-=======
-#Mon Oct 07 16:29:48 BRT 2019
-base.0=C\:\\Users\\felipe.santos\\Documents\\Projetos_Completos\\Projetos_Flutter\\youtube_clone\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> 550e2237e1695627bb32cadfdbbf8f89d15254de
 path.0=classes.dex
 renamed.0=classes.dex
