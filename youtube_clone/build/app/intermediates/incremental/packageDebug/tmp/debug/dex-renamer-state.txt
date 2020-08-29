@@ -1,4 +1,0 @@
-#Thu Nov 21 21:32:05 BRST 2019
-base.0=E\:\\Documentos\\ProjetosCompletos\\Projetos_Flutter\\youtube_clone\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
