@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B62700024FAEFD0005B56F0 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B626FFF24FAEFD0005B56F0 /* Grid.swift */; };
+		0B62700424FAF546005B56F0 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62700324FAF546005B56F0 /* GridLayout.swift */; };
+		0B62700624FC8DF8005B56F0 /* Array+identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62700524FC8DF8005B56F0 /* Array+identifiable.swift */; };
+		0B62700824FCA6A7005B56F0 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62700724FCA6A7005B56F0 /* Array+Only.swift */; };
 		4E0F4EBD24AED03A0068DA0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F4EBC24AED03A0068DA0A /* AppDelegate.swift */; };
 		4E0F4EBF24AED03A0068DA0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F4EBE24AED03A0068DA0A /* SceneDelegate.swift */; };
 		4E0F4EC124AED03A0068DA0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F4EC024AED03A0068DA0A /* ContentView.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B626FFF24FAEFD0005B56F0 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		0B62700324FAF546005B56F0 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		0B62700524FC8DF8005B56F0 /* Array+identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+identifiable.swift"; sourceTree = "<group>"; };
+		0B62700724FCA6A7005B56F0 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		4E0F4EB924AED03A0068DA0A /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0F4EBC24AED03A0068DA0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E0F4EBE24AED03A0068DA0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +71,16 @@
 				4E65D80C24B28CBD00C08A68 /* EmojiMemoryGameViewModel.swift */,
 				4E0F4EBC24AED03A0068DA0A /* AppDelegate.swift */,
 				4E65D80A24B2833F00C08A68 /* MemoryGameModel.swift */,
+				0B62700724FCA6A7005B56F0 /* Array+Only.swift */,
 				4E0F4EBE24AED03A0068DA0A /* SceneDelegate.swift */,
 				4E0F4EC024AED03A0068DA0A /* ContentView.swift */,
 				4E0F4EC224AED0400068DA0A /* Assets.xcassets */,
 				4E0F4EC724AED0400068DA0A /* LaunchScreen.storyboard */,
 				4E0F4ECA24AED0400068DA0A /* Info.plist */,
 				4E0F4EC424AED0400068DA0A /* Preview Content */,
+				0B626FFF24FAEFD0005B56F0 /* Grid.swift */,
+				0B62700524FC8DF8005B56F0 /* Array+identifiable.swift */,
+				0B62700324FAF546005B56F0 /* GridLayout.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -155,8 +167,12 @@
 				4E0F4EBD24AED03A0068DA0A /* AppDelegate.swift in Sources */,
 				4E0F4EBF24AED03A0068DA0A /* SceneDelegate.swift in Sources */,
 				4E65D80B24B2833F00C08A68 /* MemoryGameModel.swift in Sources */,
+				0B62700824FCA6A7005B56F0 /* Array+Only.swift in Sources */,
 				4E0F4EC124AED03A0068DA0A /* ContentView.swift in Sources */,
 				4E65D80D24B28CBD00C08A68 /* EmojiMemoryGameViewModel.swift in Sources */,
+				0B62700624FC8DF8005B56F0 /* Array+identifiable.swift in Sources */,
+				0B62700424FAF546005B56F0 /* GridLayout.swift in Sources */,
+				0B62700024FAEFD0005B56F0 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +312,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Memorize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +332,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Memorize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

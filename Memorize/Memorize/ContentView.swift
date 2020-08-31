@@ -12,13 +12,12 @@ struct ContentView: View {
     @ObservedObject var viewModel: EmojiMemoryGameViewModel
     var body: some View {
         
-        HStack {
-            ForEach(viewModel.cards) { card in
+        Grid(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
                     self.viewModel.choose(card: card)
                 }
-            }
-        }.padding(10)
+        .padding()
+        }.padding()
             .foregroundColor(Color.orange)
     }
 }
@@ -39,8 +38,10 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: conerRadius)
                     .stroke( lineWidth: lineWidth)
                 Text(card.content)
-            } else{
+            } else {
+                if !card.isMatched {
                 RoundedRectangle(cornerRadius: conerRadius).fill()
+                }
             }
         }.font(Font.system(size: fontSize(for: size)))
     }
